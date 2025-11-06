@@ -3,78 +3,98 @@
 <html lang="et">
 <head>
     <meta charset="UTF-8">
-    <title>Lehe päis</title>
+    <!-- responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stiil -->
+    <link rel="stylesheet" href="style.css">
+    <title>Seminar 8 </title>
 </head>
 <body>
-    <h1>Seitsmenda seminari esitamine</h1>
-    <p>See leht tutvustab seitsmenda seminari sisu ja nõudeid.</p>
-    <br>
-    <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
-    <br><br>
-    <img src="https://www.eatingwell.com/thmb/YxkWBfh2AvNYrDKoHukRdmRvD5U=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/article_291139_the-top-10-healthiest-foods-for-kids_-02-4b745e57928c4786a61b47d8ba920058.jpg" 
-    alt="Tervislik toit" width="400">
-    <br>
-    <h2>Peamised toidugrupid</h2>
-    <ul>
-    <li>Puu- ja köögiviljad
-        <ul>
+  <header>
+    <h1>8seminar</h1>
+    <nav>
+      <a href="index.html">Avaleht</a> |
+      <a href="teine.html">Teine leht</a>
+    </nav>
+  </header>
+
+  <!-- kahe tulba konteiner -->
+  <div class="lehe-sisu">
+    <div class="vasak">
+      <h2>Veebilehe kujundamine CSS abil</h2>
+      <p>Kujunda lehe pealkiri (muuda värvi, suurust, fonti jmt).
+Kujunda tekst lehel (värv, suurus, teistsugune font kui pealkirjal, joondus).
+Lisa pildile vabalt valitud raam ja/või vari.
+Kujunda tabel (nt päis eri värvi, paksem kiri).
+Muuda terve lehe taustavärvi või lisa taustapilt.
+Jaga lehel olev info kaheks, et info kuvataks kahe tulbana. Tulemusena on kogu informatsioon lehel näha ilma kerimata.</p>
+      <a href="https://www.w3schools.com/" target="_blank" class="w3link">
+        W3Schools! aitas mul seda saiti teha
+      </a>
+      <h2>Peamised toidugrupid</h2>
+      <ul>
+        <li>Puu- ja köögiviljad
+          <ul>
             <li>Värsked marjad</li>
             <li>Lehtköögiviljad</li>
-        </ul>
-    </li>
-    </ul>
-    <h2>Näidismenüü</h2>
-    <table style="border-collapse: collapse; width: 60%; border: 1px solid black;">
-        <tr>
-            <th style="border: 1px solid black; padding: 6px;">Toidukord</th>
-            <th style="border: 1px solid black; padding: 6px;">Näide</th>
-            <th style="border: 1px solid black; padding: 6px;">Kaal</th>
-            <th style="border: 1px solid black; padding: 6px;">Kalorid</th>
-        </tr>
-        <tr>
-            <td style="border: 1px solid black; padding: 6px;">Hommikusöök</td>
-            <td style="border: 1px solid black; padding: 6px;">Kaerahelbepuder</td>
-            <td style="border: 1px solid black; padding: 6px;">50 g</td>
-            <td style="border: 1px solid black; padding: 6px;">183 kcal</td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid black; padding: 6px;">Lõunasöök</td>
-            <td style="border: 1px solid black; padding: 6px;">Kanafilee</td>
-            <td style="border: 1px solid black; padding: 6px;">200 g</td>
-            <td style="border: 1px solid black; padding: 6px;">208 kcal</td>
-        </tr>
-    </table>
-    <br>
-    <a href="teine.html">Mine teisele lehele</a>
-    <br><br>
-    <h2>Ebakorrapärane tabel</h2>
-    <table style="border-collapse: collapse; border: 1px solid black; width: 70%;">
-        <tr>
-            <th style="border: 1px solid black; padding: 6px;">Päev</th>
-            <th style="border: 1px solid black; padding: 6px;">Tegevus</th>
-            <th style="border: 1px solid black; padding: 6px;">Aeg</th>
-        </tr>
-        <tr>
-            <td style="border: 1px solid black; padding: 6px;">Esmaspäev</td>
-            <td style="border: 1px solid black; padding: 6px;">Loeng</td>
-            <td style="border: 1px solid black; padding: 6px;">10:15</td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid black; padding: 6px;">Teisipäev</td>
-            <!-- ühendame kaks veergu -->
-            <td colspan="2" style="border: 1px solid black; padding: 6px;">Iseseisev töö</td>
-        </tr>
-        <tr>
-            <!-- ühendame kaks rida -->
-            <td rowspan="2" style="border: 1px solid black; padding: 6px;">Kolmapäev</td>
-            <td style="border: 1px solid black; padding: 6px;">Praktikum</td>
-            <td style="border: 1px solid black; padding: 6px;">12:15</td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid black; padding: 6px;">Kohtumine juhendajaga</td>
-            <td style="border: 1px solid black; padding: 6px;">14:00</td>
-        </tr>
-    </table>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
+    <div class="parem">
+      <img src="https://www.eatingwell.com/thmb/YxkWBfh2AvNYrDKoHukRdmRvD5U=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/article_291139_the-top-10-healthiest-foods-for-kids_-02-4b745e57928c4786a61b47d8ba920058.jpg" 
+      alt="Tervislik toit" width="400">
+
+      <h2>Näidismenüü</h2>
+      <table class="paks-tabel">
+        <tr>
+          <th>Toidukord</th>
+          <th>Näide</th>
+          <th>Kaal</th>
+          <th>Kalorid</th>
+        </tr>
+        <tr>
+          <td>Hommikusöök</td>
+          <td>Kaerahelbepuder</td>
+          <td>50 g</td>
+          <td>183 kcal</td>
+        </tr>
+        <tr>
+          <td>Lõunasöök</td>
+          <td>Kanafilee</td>
+          <td>200 g</td>
+          <td>208 kcal</td>
+        </tr>
+      </table>
+
+      <h2>Ebakorrapärane tabel</h2>
+      <table class="paks-tabel">
+        <tr>
+          <th>Päev</th>
+          <th>Tegevus</th>
+          <th>Aeg</th>
+        </tr>
+        <tr>
+          <td>Esmaspäev</td>
+          <td>Loeng</td>
+          <td>10:15</td>
+        </tr>
+        <tr>
+          <td>Teisipäev</td>
+          <td colspan="2">Iseseisev töö</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Kolmapäev</td>
+          <td>Praktikum</td>
+          <td>12:15</td>
+        </tr>
+        <tr>
+          <td>Kohtumine juhendajaga</td>
+          <td>14:00</td>
+        </tr>
+      </table>
+    </div>
+  </div>
 </body>
 </html>
