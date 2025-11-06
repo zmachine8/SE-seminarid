@@ -1,0 +1,198 @@
+.paks-tabel {
+  border-collapse: collapse;
+  width: 70%; /* veidi laiem */
+  margin: 20px auto; /* keskendab lehel */
+  font-family: Arial, sans-serif;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* kerge vari ümber */
+  table-layout: auto;   /* fikseerib veerulaiused */
+  width: 100%;           /* mõlemad tabelid on sama laiad tulbas */
+}
+
+/* Tabeli päis (th) */
+.paks-tabel th {
+  background-color: #4caf50; /* rohekas taust päises */
+  color: white;              /* valge tekst */
+  font-weight: bold;         /* paksem kiri */
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #333;
+}
+
+/* Tabeli lahtrid (td) */
+.paks-tabel td {
+  border: 1px solid #555;
+  padding: 8px;
+  text-align: left;
+  white-space: nowrap; /* ei murra sõnu mitmele reale */
+}
+
+/* Reavaheldus (parem loetavus) */
+.paks-tabel tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.paks-tabel tr {
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Kui hiirega üle rea minna */
+.paks-tabel tr:hover {
+  background-color: #e6f4ea; /* õrn roheline taust */
+  transform: translateX(2px);
+}
+
+/* Päise stiil */
+header {
+  background-color: #c5edff;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Pealkiri */
+header h1 {
+  color: rgb(0, 0, 0);
+  text-transform: none;
+  letter-spacing: 20px;
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+/* Navigatsioonilingid */
+header a {
+  color: #2c3e50;                 /* kõik lingid valged */
+  text-decoration: none;        /* eemaldab allajoonduse */
+  margin: 0 15px;               /* vahed linkide vahel */
+  font-weight: bold;
+  display: inline-block;         /* ← Oluline! Lubab transformil mõjuda */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Kui hiirega üle lingi */
+header a:hover {
+  color: #388e3c;               /* hele toon hoveril */
+  text-decoration: underline;
+  transform: translateY(-4px);
+}
+
+/* Kui link on külastatud */
+header a:visited {
+  color: #2c3e50;                 /* sama värv nagu tavaliselt */
+}
+
+/* Kui vajutad lingile */
+header a:active {
+  color: #81c784;               /* lühike efekt vajutamisel */
+}
+
+/* html-i line breakide säilitamine */
+p {
+  white-space: pre-line; /* keeps line breaks from the HTML */
+}
+
+p {
+  color: #333;          /* teksti värv */
+  font-size: 18px;      /* veidi suurem, loetav suurus */
+  font-family: Arial, Helvetica, sans-serif;  /* TEINE font kui pealkirjal */
+  text-align: justify;  /* joondus: left, center, right või justify */
+  line-height: 1.6;     /* rea vahe, et oleks õhku */
+  max-width: 800px;     /* et rida poleks liiga pikk */
+  margin: 0 auto 10px;  /* keskendab ploki, lisab alla veidi vahet */
+}
+
+.w3link {
+  margin-left:auto;
+  text-decoration: none;                /* eemaldab allajoonduse */
+  color: rgb(4, 4, 187);           /* saad muuta värvi */
+}
+.w3link:hover {
+  text-decoration: underline;           /* allajoonduse efekt hiirega üle minnes */
+}
+
+img {
+  display: block;             /* et ei jääks tühikuid ümber pildi */
+  margin: 0 auto 20px auto;   /* keskendab pildi ja lisab vahe alla */
+  border: 4px solid #333;
+  border-radius: 8px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
+  max-width: 100%;            /* et pilt ei ületaks veeru laiust */
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+  box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+  color: #2c3e50;
+  font-family: "Georgia", serif;
+  font-size: 24px;
+  text-align: left;
+  margin: 10px 0 15px 0;   /* eemaldatud padding-left */
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 6px;
+}
+
+ul {
+  list-style-type: square;      /* punktide kuju: disc, circle, square */
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-left: auto;
+}
+
+/* alam-nimekiri (teine tasand) */
+ul ul {
+  list-style-type: circle;      /* teise tasandi punktid */
+  color: #555;
+  margin-top: 8px;
+  margin-left: 30px;
+  font-size: 16px;
+}
+
+/* hover-efekt (valikuline, kui hiirega üle liikumine) */
+li:hover {
+  color: darkgreen;
+  cursor: default;
+}
+
+body {
+  background-color: #e6f7ff; /* hele sinakas taust */
+  font-family: Arial, sans-serif;
+  color: #222; /* teksti värv */
+  margin: 0;
+  padding: 0;
+}
+
+/* === Kahe tulba paigutus === */
+.lehe-sisu {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* kaks võrdselt laia tulpa */
+  gap: 40px; /* vahe tulbavahel */
+  align-items: start; /* sisu joondub üles */
+  padding: 20px 60px;
+}
+
+/* Vasak ja parem tulp */
+.vasak, .parem {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vasak:hover,
+.parem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* et sisu mahuks ekraanile (nt 100vh kõrgus) */
+body {
+  height: 100vh;
+  overflow: hidden; /* eemaldab kerimise */
+}
